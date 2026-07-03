@@ -6,7 +6,6 @@
   --purple: #8f54f6;
   --purple-dark: #6e3dd9;
   --violet: #ede4ff;
-  --green: #0f7b5d;
   --bg: #fbf9ff;
   --shadow: 0 18px 54px rgba(28, 25, 48, 0.1);
 }
@@ -64,11 +63,17 @@ h3 {
   margin: 0 0 8px;
 }
 
-.lead {
+.lead,
+.subtext {
   max-width: 720px;
   color: var(--muted);
   font-size: 20px;
   margin: 0;
+}
+
+.subtext {
+  font-size: 16px;
+  margin-top: 8px;
 }
 
 .viewer-card,
@@ -100,6 +105,7 @@ button {
   padding: 12px 16px;
   cursor: pointer;
   box-shadow: 0 14px 24px rgba(143, 84, 246, 0.24);
+  white-space: nowrap;
 }
 
 .workflow {
@@ -108,7 +114,8 @@ button {
   gap: 14px;
 }
 
-.step {
+.step,
+.proof-grid article {
   border: 1px solid var(--line);
   border-radius: 20px;
   padding: 18px;
@@ -128,7 +135,8 @@ button {
 }
 
 .step p,
-.proof-card p {
+.proof-card p,
+.proof-grid p {
   color: var(--muted);
   margin: 0 0 12px;
 }
@@ -137,6 +145,13 @@ button {
   transform: translateY(-4px);
   border-color: rgba(143, 84, 246, 0.5);
   box-shadow: 0 18px 42px rgba(143, 84, 246, 0.18);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 18px;
 }
 
 footer {
@@ -157,7 +172,8 @@ footer {
     margin-top: 16px;
   }
 
-  .workflow {
+  .workflow,
+  .proof-grid {
     grid-template-columns: 1fr;
   }
 }
