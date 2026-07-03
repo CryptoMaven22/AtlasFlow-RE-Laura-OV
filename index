@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laura Operational Viewer | AtlasFlow</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">AtlasFlow RE</p>
+      <h1>Laura Operational Viewer</h1>
+      <p>
+        Laura helps real estate agents see what changed, what matters,
+        what is at risk, and what to do next.
+      </p>
+    </section>
+
+    <section class="viewer">
+      <h2>Workflow Replay</h2>
+      <p>Reply → Database → AI → Agent Alert → Viewer</p>
+      <button id="replayButton">Replay Workflow</button>
+    </section>
+  </main>
+
+  <footer>
+    AtlasFlow RE — Laura OV — Atlas Studios
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
